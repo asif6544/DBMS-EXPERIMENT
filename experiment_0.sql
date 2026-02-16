@@ -1,3 +1,12 @@
+# DBMS Assignment
+
+## Experiment 0
+Basic MySQL Commands:
+- Create Database
+- Create Table
+- Insert Records
+- Foreign Key Constraint
+
 <center><h2>Experiment 0</h2></center>
 
 ### How to show database?
