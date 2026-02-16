@@ -1,0 +1,59 @@
+<center><h2>Experiment 2</h2></center>
+<h4>Objective:</h4>
+To perform SELECT queries using conditions such as DISTINCT, WHERE, AND, OR, IN, NOT IN, BETWEEN, and LIKE.
+
+```sql
+-- 1. List all distinct jobs in EMPLOYEE
+SELECT DISTINCT JOB 
+FROM EMPLOYEE;
+
+-- 2. List all information about employees in Department Number 30
+SELECT * 
+FROM EMPLOYEE
+WHERE DEPTNO = 30;
+
+-- 3. Find all department numbers greater than 20
+SELECT DISTINCT DEPTNO 
+FROM EMPLOYEE
+WHERE DEPTNO > 20;
+
+-- 4. Find all information about managers and clerks in department 30
+SELECT * 
+FROM EMPLOYEE
+WHERE DEPTNO = 30
+AND JOB IN ('MANAGER','CLERK');
+
+-- 5. List employee name, employee number, and department of all clerks
+SELECT ENAME, EMPNO, DEPTNO 
+FROM EMPLOYEE
+WHERE JOB = 'CLERK';
+
+-- 6. Find all managers not in department 30
+SELECT * 
+FROM EMPLOYEE
+WHERE JOB = 'MANAGER'
+AND DEPTNO <> 30;
+
+-- 7. List information about employees in department 10 
+-- who are not managers or clerks
+SELECT * 
+FROM EMPLOYEE
+WHERE DEPTNO = 10
+AND JOB NOT IN ('MANAGER','CLERK');
+
+-- 8. Find employees and jobs earning between 1200 and 1400
+SELECT ENAME, JOB, SAL 
+FROM EMPLOYEE
+WHERE SAL BETWEEN 1200 AND 1400;
+
+-- 9. List name and department number of employees 
+-- who are clerks, analysts, or salesmen
+SELECT ENAME, DEPTNO 
+FROM EMPLOYEE
+WHERE JOB IN ('CLERK','ANALYST','SALESMAN');
+
+-- 10. List name and department number of employees 
+-- whose names begin with 'M'
+SELECT ENAME, DEPTNO 
+FROM EMPLOYEE
+WHERE ENAME LIKE 'M%';
