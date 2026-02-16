@@ -1,28 +1,35 @@
-# 🧪 Experiment 1 – SQL Commands on EMPLOYEE_MASTER
 
-## 🎯 Objective
-To perform CREATE, DELETE, UPDATE, ALTER, and DROP operations on a table using SQL.
+<center><h2>Experiment 1</h2></center>
+<h4>Queries:</h4>
 
----
+### 1.Create employee_master table with data using employee table
+~~~sql
+CREATE TABLE EMPLOYEE_MASTER AS SELECT * FROM EMPLOYEE;
+~~~
 
-
-
-```sql
--- 1. Create EMPLOYEE_MASTER table with data from EMPLOYEE
-CREATE TABLE EMPLOYEE_MASTER AS 
-SELECT * FROM EMPLOYEE;
-
--- 2. Delete all records where DEPTNO = 10
+### 2.Delete all record into Employee_master whose DeptNo is 10
+~~~sql
 DELETE FROM EMPLOYEE_MASTER
 WHERE DEPTNO = 10;
+~~~
 
--- 3. Increase 10% salary for employees in DEPTNO = 20
+### 3.Update 10% in his salary of DEPTNO 20 into Employee_Master
+~~~sql
 UPDATE EMPLOYEE_MASTER
-SET SAL = (SAL + IFNULL(COMM,0)) * 1.10
-WHERE DEPTNO = 20;
+SET SAL = (SAL + IFNULL(COMM,0))* 1.10
+WHERE deptno = 20;
+~~~
 
--- 4. Modify SAL column datatype to DECIMAL(10,2)
+### 4.Alter SAL with size 10,2 in Employee_Master
+~~~sql
 ALTER TABLE EMPLOYEE_MASTER
+MODIFY SAL DECIMAL(10,2);
+~~~
+
+### 5.Drop Employee_master Table
+~~~sql
+DROP EMPLOYEE_MASTER;
+~~~
 MODIFY SAL DECIMAL(10,2);
 
 -- 5. Drop EMPLOYEE_MASTER table
