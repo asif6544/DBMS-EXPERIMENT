@@ -1,4 +1,3 @@
-
 <center><h2>Experiment 0</h2></center>
 
 ### How to show database?
@@ -44,12 +43,12 @@ CREATE TABLE EMPLOYEE(
     FOREIGN KEY(DEPTNO)
     REFERENCES DEPARTMENT(DEPTNO)
 );
-~~~
+
 
 ### How to describe employee?
-~~~sql
+sql
 DESC EMPLOYEE;
-~~~
+
 
 ### How to show tables?
 ~~~sql
