@@ -1,6 +1,6 @@
 
 # DBMS-EXPERIMENT
-# 🗄️ DBMS Assignment Repository
+# 🗄️ DBMS EXPERIMENT Repository
 
 ## 👨‍🎓 Student Information
 **Name:** Md Asif  
