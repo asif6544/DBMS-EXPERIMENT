@@ -1,5 +1,5 @@
 
-# DBMS-ASSIGNMENT
+# DBMS-EXPERIMENT
 # 🗄️ DBMS Assignment Repository
 
 ## 👨‍🎓 Student Information
