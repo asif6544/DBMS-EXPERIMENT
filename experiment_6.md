@@ -1,6 +1,5 @@
--- =====================================================
--- 1. Display empno, ename, department name
--- =====================================================
+
+1. Display empno, ename, department name
 ```
 SELECT empno,
        ename,
@@ -13,24 +12,14 @@ SELECT empno,
        END AS dept_name
 FROM emp;
 ```
-
-
--- =====================================================
--- 2. Display your age in days
--- =====================================================
-
+ 2. Display your age in days
 ```SELECT DATEDIFF(CURDATE(), '2000-08-15') AS age_in_days; ```
 
-
--- =====================================================
--- 3. Display your age in months
--- =====================================================
+3. Display your age in months
  ```SELECT TIMESTAMPDIFF(MONTH, '2000-08-15', CURDATE()) AS age_in_months;```
 
+4. Display current date like 15th August Friday 1997
 
--- =====================================================
--- 4. Display current date like 15th August Friday 1997
--- =====================================================
 ```
 SELECT CONCAT(
        DATE_FORMAT(CURDATE(), '%D %M %W '),
